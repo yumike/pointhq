@@ -8,7 +8,7 @@ def read(filename):
 
 setup(
     name = 'pointhq',
-    version = '0.1.dev',
+    version = '0.1',
     license = 'ISC',
     description = 'pointhq.com API client',
     long_description = read('README.rst'),
