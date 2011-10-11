@@ -16,7 +16,7 @@ class Response(object):
 def request(method, url, auth, data=None):
     if data is not None:
         data = json.dumps(data)
-    response, content = http2lib.Http(timeout=10).request(
+    response, content = httplib2.Http(timeout=10).request(
         uri = 'http://pointhq.com%s' % url,
         method = method.upper(),
         body = data,
