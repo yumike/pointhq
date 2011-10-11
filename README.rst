@@ -19,12 +19,12 @@ If you use Python 2.5, ``simplejson`` is required::
 Usage example
 -------------
 
-# Create new ``pointhq.Point`` object::
+1. Create new ``pointhq.Point`` object::
 
     import pointhq
     point = Point(username='john@example.com', apitoken='secret-key')
 
-# Play with zones::
+2. Play with zones::
 
     zones = point.zones.retrieve()
     new_zone = point.zones.create(name='example.com')
@@ -33,7 +33,7 @@ Usage example
     point.zones(1).update(group='Clients')
     point.zones(1).delete()
 
-# Play with zone records::
+3. Play with zone records::
 
     zone_records = point.zones(1).records.retrieve()
     new_record = point.zones(1).records.create(name='example.com.', data='123.45.67.89', record_type='A')
